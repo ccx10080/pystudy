@@ -42,4 +42,18 @@ print(len('中文'.encode('utf-8')))
 # 如果只有一个%?，括号可以省略。
 print('hello,%s' % 'world')
 
+print('%2d-%02d' % (3,1))
+print('%.2f' % 3.1415926)
 
+# 如果你不太确定应该用什么，%s永远起作用，他会把任何数据类型转换为字符串
+
+print('Age:%s. Gender:%s' %(25,True))
+
+#%为普通字符时，需要用%%来表示一个%
+print('growth rate: %d %%' % 7)
+
+#format()
+print('Hello,{0},成绩提升了{1:.1f}%'.format('小明',17.125))
+
+
+#utf-8
